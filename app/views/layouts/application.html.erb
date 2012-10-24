@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Site</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="container">
+	<header>
+		<%= image_tag("smile.jpg",:alt=>"Smile",:class=>"image")%>
+		
+		<nav>
+			<ul>
+				<li><%= link_to 'Главная', "/" %></li>				
+				<li><%= link_to 'Обратная связь', new_feedback_path %></li>
+				<li><%= link_to 'О нас',"/about", :method=>:get%></li>
+				<li><%= link_to 'Контакты',"/contacts", :method=>:get%></li>
+				<li><%= link_to 'Вакансии', "#" %></li>
+			</ul>
+		</nav>
+	</header>
+	<section>
+		<%= yield %>
+	</section>
+	</div>
+</body>
+</html>
