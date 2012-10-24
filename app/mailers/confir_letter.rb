@@ -8,7 +8,7 @@ class ConfirLetter < ActionMailer::Base
   #
   def received(feedback)
     @greeting = feedback
-
-    mail :to => APP_CONFIG["MAIL_ADDRESS"]
+    mail :to => "lyapinartur@gmail.com"
   end
 end
+#APP_CONFIG["MAIL_ADDRESS"]
