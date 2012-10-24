@@ -1,0 +1,4 @@
+development:
+  MAIL_ADDRESS: lyapinartur@gmail.com
+production:
+MAIL_ADDRESS: lyapinartur@gmail.com
