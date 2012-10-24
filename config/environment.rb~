@@ -13,4 +13,3 @@ config.action_mailer.smtp_settings = {
   :password  => "lis314372",
   :authentication  => :login
 }
-end
