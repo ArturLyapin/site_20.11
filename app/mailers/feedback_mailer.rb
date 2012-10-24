@@ -6,9 +6,9 @@ class FeedbackMailer < ActionMailer::Base
   #
   #   en.feedback_mailer.received.subject
   #
-  def received
-    @greeting = "Hi"
+  def received(feedback)
+    @feedback=feedback
 
-    mail :to => "to@example.org"
+    mail (:to => "lyapinartur@gmail.com",:subject=>"feedback message")
   end
 end
