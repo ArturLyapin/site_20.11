@@ -2,14 +2,13 @@
 
 one:
   name: MyString
-  address: MyText
-  text:dvsdvzdvzd
+  text: mytext
   email: MyString
   phone_number: 121234
 
+
 two:
   name: MyString
-  address: MyText
-  text:dfsefse
+  text: Mytext
   email: MyString
   phone_number: 123423
