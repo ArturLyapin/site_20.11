@@ -7,8 +7,9 @@ class ConfirLetter < ActionMailer::Base
   #   en.confir_letter.received.subject
   #
   def received(feedback)
-    @greeting = feedback
-    mail :to => "railsjedies@gmail.com"
+    @feedback = feedback
+    mail :to =>APP_CONFIG["MAIL_ADDRESS"]
   end
 end
 #APP_CONFIG["MAIL_ADDRESS"]
+#"railsjedies@gmail.com"

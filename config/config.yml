@@ -1,4 +1,6 @@
 development:
   MAIL_ADDRESS: lyapinartur@gmail.com
+test:
+  MAIL_ADDRESS: lyapinartur@gmail.com
 production:
-MAIL_ADDRESS: lyapinartur@gmail.com
+  MAIL_ADDRESS: lyapinartur@gmail.com
