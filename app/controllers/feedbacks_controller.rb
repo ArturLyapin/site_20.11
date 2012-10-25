@@ -86,5 +86,6 @@ class FeedbacksController < ApplicationController
 def contacts
 	end
 def start
+	@greeting=t(:hello_world)
 	end
 end

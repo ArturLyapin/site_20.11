@@ -1,0 +1,17 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+ru:
+  hello_world: "Привет мир"
+  start_page: "Начальная страница"
+  new_letter: "Новое письмо"
+  show_all_letters: "Просмотреть все письма"
+  name: "Имя"
+  text: "Текст вашего письма"
+  phone_num: "Телефонный номер"
+  about: "О нас"
+  our_contacts: "Наши контакты"
+  main: "Главная"
+  feedback: "Обратная связь"
+  our_contacts: "Наши контакты"
+  jobs: "Вакансии"
