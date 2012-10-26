@@ -10,13 +10,13 @@ class ConfirLetter < ActionMailer::Base
     @feedback = feedback	
 
 	mail(:to => APP_CONFIG["MAIL_ADDRESS"],
-         :subject => "Subject1")
+         :subject => "Admin letter")
   end
 	def user_received(feedback)
     @feedback = feedback
 
 	mail(:to => feedback.email,
-         :subject => "Subject2")
+         :subject => "User letter")
 	end
 end
 #APP_CONFIG["MAIL_ADDRESS"]
