@@ -1,0 +1,9 @@
+development:
+  MAIL_ADDRESS: lis314372@yandex.ru
+ 
+test:
+  MAIL_ADDRESS: lis314372@yandex.ru
+ 
+production:
+  MAIL_ADDRESS: lis314372@yandex.ru
+ 

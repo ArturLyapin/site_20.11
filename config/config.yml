@@ -1,6 +1,14 @@
 development:
-  MAIL_ADDRESS: lyapinartur@gmail.com
+  MAIL_ADDRESS: lyapinartur@gmail.com,lis314372@yandex.ru
+  MAIL_ADDRESS2: lis314372@yandex.ru
+
 test:
-  MAIL_ADDRESS: lyapinartur@gmail.com
+  MAIL_ADDRESS: lyapinartur@gmail.com,lis314372@yandex.ru
+  MAIL_ADDRESS2: lis314372@yandex.ru
+
 production:
-  MAIL_ADDRESS: lyapinartur@gmail.com
+  MAIL_ADDRESS: lyapinartur@gmail.com,lis314372@yandex.ru
+  MAIL_ADDRESS2: lis314372@yandex.ru
+
+
+ 
