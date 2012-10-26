@@ -89,4 +89,6 @@ def contacts
 def start
 	@greeting=t(:hello_world)
 	end
+def jobs
+	end
 end

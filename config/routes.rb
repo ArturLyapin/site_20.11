@@ -6,6 +6,7 @@ scope "(:locale)", :locale => /en|ru/ do
   get "/about"=>'feedbacks#about'
   get "/start"=>'feedbacks#start'
   get "/contacts"=>'feedbacks#contacts'
+  get "/jobs"=>'feedbacks#jobs'
 	end
 #  get "/contacts"=>'feedbacks#contacts'
 
