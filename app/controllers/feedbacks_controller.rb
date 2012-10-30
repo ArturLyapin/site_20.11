@@ -41,11 +41,17 @@ class FeedbacksController < ApplicationController
   # POST /feedbacks.json
   def create
     @feedback = Feedback.new(params[:feedback])
+
+	uploaded_io = params[:feedback][:document]
+ 	 File.open(Rails.root.join('public','uploads',uploaded_io.original_filename), 'w') do |file|
+    	file.write(uploaded_io.read)
+	end
+
     respond_to do |format|
       if @feedback.save
 		ConfirLetter.admin_received(@feedback).deliver
 		ConfirLetter.user_received(@feedback).deliver
-
+		
         format.html { redirect_to @feedback, :notice => 'Feedback was successfully created.' }
         format.json { render :json => @feedback, :status => :created, :location => @feedback }
       else
