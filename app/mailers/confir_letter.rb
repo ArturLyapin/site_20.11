@@ -9,8 +9,8 @@ class ConfirLetter < ActionMailer::Base
   def admin_received(feedback)
     @feedback = feedback
 
-	unless feedback.document.nil?
-	file=feedback.document
+	unless feedback.document3.nil?
+	file=feedback.document3
 	attachments[file.original_filename] =File.read(file.path) #{|f| f.read}
 	end
 
