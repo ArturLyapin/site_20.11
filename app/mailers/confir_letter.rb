@@ -7,11 +7,17 @@ class ConfirLetter < ActionMailer::Base
   #   en.confir_letter.received.subject
   #
   def admin_received(feedback)
-    @feedback = feedback	
+    @feedback = feedback
+
+	unless feedback.document.nil?
+	file=feedback.document
+	attachments[file.original_filename] =File.read(file.path) #{|f| f.read}
+	end
 
 	mail(:to => APP_CONFIG["MAIL_ADDRESS"],
          :subject => "Admin letter")
   end
+
 	def user_received(feedback)
     @feedback = feedback
 
