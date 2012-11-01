@@ -27,7 +27,7 @@
 		 	required: true,
 			minlength: 3
 		},
-		"feedback[name]":{
+		"feedback[phone_number]":{
 			number: true
 		},
 		},
