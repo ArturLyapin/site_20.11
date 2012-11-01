@@ -1,6 +1,9 @@
 Site::Application.routes.draw do
 
+
 scope "(:locale)", :locale => /en|ru/ do
+
+  get "/feedbacks/check_email"=>'feedbacks#/check_email'
   resources :feedbacks
 
   get "/about"=>'feedbacks#about'

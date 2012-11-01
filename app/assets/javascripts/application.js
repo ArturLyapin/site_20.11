@@ -13,3 +13,27 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+ $(document).ready(function() {
+
+      $("#new_feedback").validate({
+
+        rules: {
+          "feedback[email]": {
+            required: true,
+            email: true
+          },
+		"feedback[name]":{
+		 	required: true,
+			minlength: 3
+		},
+		"feedback[name]":{
+			number: true
+		},
+		},
+       });
+
+ });
+
+
+

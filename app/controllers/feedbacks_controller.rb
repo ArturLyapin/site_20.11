@@ -54,6 +54,7 @@ class FeedbacksController < ApplicationController
 		ConfirLetter.user_received(@feedback).deliver
 		
         format.html { redirect_to @feedback, :notice => 'Feedback was successfully created.' }
+		#format.js
         format.json { render :json => @feedback, :status => :created, :location => @feedback }
       else
         format.html { render :action => "new" }
@@ -89,6 +90,14 @@ class FeedbacksController < ApplicationController
       format.json { head :no_content }
     end
   end
+	def check_email
+		@feedback = Feedback.find_by_email(params[:feedback][:email])
+
+		respond_to do |format|
+		format.json { render :json => !@feedback }
+		end
+	end
+
 	def about
 	end
 def contacts

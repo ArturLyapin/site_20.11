@@ -8,7 +8,7 @@ class Feedback < ActiveRecord::Base
  # attr_accessor :document_file_size
  # attr_accessor :document_updated_at
 
-	validates :name,:length=>{:minimum=>3}
-	validates :email,:length=>{:minimum=>3}
+	#validates :name,:length=>{:minimum=>3}
+	#validates :email,:length=>{:minimum=>3}
 
 end
