@@ -90,14 +90,6 @@ class FeedbacksController < ApplicationController
       format.json { head :no_content }
     end
   end
-	def check_email
-		@feedback = Feedback.find_by_email(params[:feedback][:email])
-
-		respond_to do |format|
-		format.json { render :json => !@feedback }
-		end
-	end
-
 	def about
 	end
 def contacts
