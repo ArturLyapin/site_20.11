@@ -1,5 +1,6 @@
 class FeedbacksController < ApplicationController
-  # GET /feedbacks
+  
+# GET /feedbacks
   # GET /feedbacks.json
   def index
     @feedbacks = Feedback.all
@@ -8,6 +9,10 @@ class FeedbacksController < ApplicationController
       format.html # index.html.erb
       format.json { render :json => @feedbacks }
     end
+  end
+
+def handle_unverified_request
+    logger.info 'FAIL!!!!!!!!!!!!!!!!'
   end
 
   # GET /feedbacks/1
