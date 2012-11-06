@@ -20,7 +20,6 @@ end
 gem 'json'
 gem 'paperclip', "~> 2.7"
 gem 'aws-sdk'
-gem "bcrypt-ruby"
 
 
 # Gems used only for assets and not required

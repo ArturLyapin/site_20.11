@@ -1,9 +1,12 @@
 development:
-  MAIL_ADDRESS: lyapinartur@gmail.com,slava.epifanov@gmail.com,matveyev.dmitry@gmail.com
-
+  MAIL_ADDRESS1: lyapinartur@gmail.com
+  MAIL_ADDRESS2: lis314372@yandex.ru
+ 
 test:
-  MAIL_ADDRESS: lyapinartur@gmail.com,slava.epifanov@gmail.com,matveyev.dmitry@gmail.com
-
+  MAIL_ADDRESS1: lyapinartur@gmail.com
+  MAIL_ADDRESS2: lis314372@yandex.ru
+ 
 production:
-  MAIL_ADDRESS: lyapinartur@gmail.com,slava.epifanov@gmail.com,matveyev.dmitry@gmail.com
+  MAIL_ADDRESS1: lyapinartur@gmail.com
+  MAIL_ADDRESS2: lis314372@yandex.ru
  

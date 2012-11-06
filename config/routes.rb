@@ -1,21 +1,9 @@
 Site::Application.routes.draw do
-  resources :posts
 
-  resources :examples
 
 scope "(:locale)", :locale => /en|ru/ do
-  
-	get 'admin' => 'admin#index'
-
-	controller :sessions do
-	get 'login' => :new
-	post 'login' => :create
-	get 'logout' => :destroy
-	end
-
 
   resources :feedbacks
-  resources :users
 
   get "/about"=>'feedbacks#about'
   get "/start"=>'feedbacks#start'

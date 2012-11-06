@@ -10,40 +10,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121105190811) do
+ActiveRecord::Schema.define(:version => 20121031091510) do
 
   create_table "contacts", :force => true do |t|
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
 
-  create_table "examples", :force => true do |t|
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  create_table "feedbacks", :force => true do |t|
-    t.string   "name"
-    t.text     "address"
-    t.string   "email"
-    t.integer  "phone_number"
-    t.text     "document"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
-    t.text     "text"
-  end
-
-  create_table "posts", :force => true do |t|
-    t.string   "name"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  create_table "users", :force => true do |t|
-    t.string   "name"
-    t.string   "password_digest"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
-  end
+# Could not dump table "feedbacks" because of following StandardError
+#   Unknown type 'file' for column 'document'
 
 end

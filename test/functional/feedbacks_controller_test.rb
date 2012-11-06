@@ -1,14 +1,14 @@
 require 'test_helper'
 
 class FeedbacksControllerTest < ActionController::TestCase
- setup do
+  setup do
     @feedback = feedbacks(:one)
   end
 
   test "should get index" do
-   # get :index
-  #  assert_response :success
-  #  assert_not_nil assigns(:feedbacks)
+    get :index
+    assert_response :success
+    assert_not_nil assigns(:feedbacks)
   end
 
   test "should get new" do
