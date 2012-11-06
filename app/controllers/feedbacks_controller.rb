@@ -1,5 +1,9 @@
 class FeedbacksController < ApplicationController
-  # GET /feedbacks
+ 
+def handle_unverified_request
+    logger.info 'FAIL!!!!!!!!!!!!!!!!'
+  end
+ # GET /feedbacks
   # GET /feedbacks.json
   def index
     @feedbacks = Feedback.all
@@ -42,10 +46,6 @@ class FeedbacksController < ApplicationController
   def create
     @feedback = Feedback.new(params[:feedback])
 
-	#uploaded_io = params[:feedback][:document]
- 	 #File.open(Rails.root.join('public','uploads',uploaded_io.original_filename), 'w') do |file|
-    #	file.write(uploaded_io.read)
-	#end
 
     respond_to do |format|
       if @feedback.save
