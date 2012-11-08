@@ -55,6 +55,7 @@ background:url(read_more_bg.gif) no-repeat center;
 }
 a:hover.read_more{
 text-decoration:underline;
+background-color:#e9e5e2;
 }
 img.left_img{
 float:left;
@@ -87,7 +88,7 @@ font-weight:bold;
 }
 .title_welcome{
 width: auto;
-padding:0 0 0 35px;
+padding:0 0 6px 35px;
 font-size:22px;
 color:#24a4b3;
 background:url(checked.gif) no-repeat left top;
@@ -242,6 +243,7 @@ background:url(bullet_list.gif) no-repeat left;
 }
 ul.list li a:hover{
 text-decoration:underline;
+background-color:#e9e5e2;
 }
 .testimonials{
 padding:20px 0 20px 0;
