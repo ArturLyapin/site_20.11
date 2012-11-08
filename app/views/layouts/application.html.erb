@@ -11,11 +11,11 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<div class="container">
-	<header>
-		<%= image_tag("smile.jpg",:alt=>"Smile",:class=>"image")%>
+	<div id="main_container">
+	<div id="header">
+		<%= image_tag("logo.gif",:alt=>"Logo",:class=>"logo")%>
 		
-		<nav>
+		<div class="menu">
 			<ul>
 				<li><%= link_to t(:main), "/" %></li>				
 				<li><%= link_to t(:feedback), new_feedback_path %></li>
@@ -23,10 +23,12 @@
 				<li><%= link_to t(:our_contacts),"/contacts", :method=>:get%></li>
 				<li><%= link_to t(:jobs), "/jobs", :method=>:get %></li>
 			</ul>
-		</nav>
-	</header>
+		</div>
+	</div>
 	<section>
+	
 		<%= yield %>
+		
 	</section>
 	</div>
 </body>
