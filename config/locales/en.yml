@@ -17,4 +17,5 @@ en:
   jobs: "Jobs"
   add_file: "Add file"
   send_letter: "Send letter"
+  create_message: "Letter sent successfully"
 

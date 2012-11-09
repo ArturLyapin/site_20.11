@@ -81,8 +81,8 @@ padding:30px 0 0 0px;
 }
 .title{
 width: auto;
-padding:2px 0 10px 0;
-font-size:17px;
+padding:2px 0px 10px 15px;
+font-size:22px;
 color:#2e2721;
 font-weight:bold;
 }
@@ -102,7 +102,22 @@ span.orange{
 font-weight:bold;
 color:#da5b23;
 }
-
+span.blue{
+font-weight:bold;
+color:#24a4b3;
+}
+.feedback{
+padding:10px 35px 0 25px;
+}
+.field{
+font-style:italic;
+}
+.contacts{
+padding:10px 35px 0 20px;
+}
+.about{
+padding:10px 35px 0 20px;
+}
 /*---------------- menu tab----------------------*/
 .menu{
 width:821px;

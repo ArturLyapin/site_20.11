@@ -3,6 +3,7 @@ class FeedbacksController < ApplicationController
 def handle_unverified_request
     logger.info 'FAIL!!!!!!!!!!!!!!!!'
   end
+
  # GET /feedbacks
   # GET /feedbacks.json
   def index
@@ -53,7 +54,7 @@ def handle_unverified_request
 
 		ConfirLetter.user_received(@feedback).deliver
 		
-        format.html { redirect_to @feedback, :notice => 'Feedback was successfully created.' }
+        format.html { redirect_to @feedback, :notice => t(:create_message) }
 		#format.js
         format.json { render :json => @feedback, :status => :created, :location => @feedback }
       else

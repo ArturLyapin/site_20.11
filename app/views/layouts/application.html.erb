@@ -20,7 +20,6 @@
 				<li><%= link_to t(:main), "/" %></li>				
 				<li><%= link_to t(:feedback), new_feedback_path %></li>
 				<li><%= link_to t(:about),"/about", :method=>:get%></li>
-				<li><%= link_to t(:our_contacts),"/contacts", :method=>:get%></li>
 				<li><%= link_to t(:jobs), "/jobs", :method=>:get %></li>
 			</ul>
 		</div>
@@ -30,6 +29,14 @@
 		<%= yield %>
 		
 	</section>
+
+	 <div id="footer">                                              
+        <div class="left_footer"><%= link_to t(:main), "/" %> <%= link_to t(:about),"/about", :method=>:get%> <%= link_to t(:feedback), new_feedback_path %></div>
+        <div class="right_footer">
+			<%= image_tag("csstemplatesmarket.gif",:alt=>"csstemplatesmarket")%>
+        </div>   
+    
+    </div>
 	</div>
 </body>
 </html>
