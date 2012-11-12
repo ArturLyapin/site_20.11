@@ -30,7 +30,7 @@ def handle_unverified_request
   # GET /feedbacks/new.json
   def new
     @feedback = Feedback.new
-
+	@menu="feedback"
     respond_to do |format|
       format.html # new.html.erb
       format.json { render :json => @feedback }
@@ -92,12 +92,14 @@ def handle_unverified_request
     end
   end
 	def about
+	@menu="about"
 	end
 def contacts
 	end
 def start
-	@greeting=t(:hello_world)
+	@menu="home"
 	end
 def jobs
+	@menu="jobs"
 	end
 end

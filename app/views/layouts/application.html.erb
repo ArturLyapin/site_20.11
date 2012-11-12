@@ -16,12 +16,7 @@
 		<%= image_tag("logo.gif",:alt=>"Logo",:class=>"logo")%>
 		
 		<div class="menu">
-			<ul>
-				<li><%= link_to t(:main), "/" %></li>				
-				<li><%= link_to t(:feedback), new_feedback_path %></li>
-				<li><%= link_to t(:about),"/about", :method=>:get%></li>
-				<li><%= link_to t(:jobs), "/jobs", :method=>:get %></li>
-			</ul>
+			<%= render 'menu' %>
 		</div>
 	</div>
 	<section>
