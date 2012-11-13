@@ -1,49 +1,8 @@
-			
-		
-			<% case @menu %>
-			<% when "home" %>
-			
 			<ul>
-			  <li class="selected"><%= link_to t(:main), "/" %></li>				
-				<li><%= link_to t(:feedback), new_feedback_path %></li>
-				<li><%= link_to t(:about),"/about", :method=>:get%></li>
-				<li><%= link_to t(:jobs), "/jobs", :method=>:get %></li>		
+			  <li class=<%=@menu[:main]%>><%= link_to t(:main), "/" %></li>				
+				<li class=<%=@menu[:feedback]%>><%= link_to t(:feedback), new_feedback_path %></li>
+				<li class=<%=@menu[:about]%>><%= link_to t(:about),"/about"%></li>
+				<li class=<%=@menu[:jobs]%>><%= link_to t(:jobs), "/jobs" %></li>		
 			</ul>	
 			
-			<% when "feedback" %>
-			
-			<ul>
-			    <li><%= link_to t(:main), "/" %></li>				
-				<li  class="selected"><%= link_to t(:feedback), new_feedback_path %></li>
-				<li><%= link_to t(:about),"/about", :method=>:get%></li>
-				<li><%= link_to t(:jobs), "/jobs", :method=>:get %></li>		
-			</ul>	
-			
-				<% when "about" %>
-			
-			<ul>
-			    <li><%= link_to t(:main), "/" %></li>				
-				<li><%= link_to t(:feedback), new_feedback_path %></li>
-				<li   class="selected"><%= link_to t(:about),"/about", :method=>:get%></li>
-				<li><%= link_to t(:jobs), "/jobs", :method=>:get %></li>		
-			</ul>
-			
-				<% when "jobs" %>
-			
-			<ul>
-			    <li><%= link_to t(:main), "/" %></li>				
-				<li><%= link_to t(:feedback), new_feedback_path %></li>
-				<li><%= link_to t(:about),"/about", :method=>:get%></li>
-				<li  class="selected"><%= link_to t(:jobs), "/jobs", :method=>:get %></li>		
-			</ul>
-
-			<% else %>
-			
-			<ul>
-			  <li class="selected"><%= link_to t(:main), "/" %></li>				
-				<li><%= link_to t(:feedback), new_feedback_path %></li>
-				<li><%= link_to t(:about),"/about", :method=>:get%></li>
-				<li><%= link_to t(:jobs), "/jobs", :method=>:get %></li>		
-			</ul>	
-			<% end%>
 			
