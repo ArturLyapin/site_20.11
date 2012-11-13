@@ -47,7 +47,6 @@ def handle_unverified_request
   def create
     @feedback = Feedback.new(params[:feedback])
 
-
     respond_to do |format|
       if @feedback.save
 		ConfirLetter.admin_received(@feedback).deliver
