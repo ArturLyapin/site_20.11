@@ -2,7 +2,7 @@ module FeedbacksHelper
 def list_class(link_title)
 	@action=params[:action]
 	if @action==link_title
-		return "selected"
+		return " class=selected"
 	else
 		return
 	end		
