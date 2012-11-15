@@ -49,11 +49,12 @@ def handle_unverified_request
 
     respond_to do |format|
       if @feedback.save
+        
         ConfirLetter.admin_received(@feedback).deliver 
         ConfirLetter.user_received(@feedback).deliver
         
         format.html { redirect_to @feedback, :notice => t(:create_message) }
-		    format.js {}
+		    format.js 
         format.json { render :json => @feedback, :status => :created, :location => @feedback }
 
       else
