@@ -28,7 +28,7 @@ gem 'fastercsv'
 gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 
 
-gem 'remotipart', '~> 0.4'
+gem 'remotipart'
 
 
 # Gems used only for assets and not required
