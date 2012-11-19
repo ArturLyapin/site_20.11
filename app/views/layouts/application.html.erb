@@ -2,23 +2,12 @@
 <html>
 <head>
   <title>Site</title>
-<<<<<<< HEAD
+
 
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
 	<%= javascript_include_tag "http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.4.min.js" %>
 <%= javascript_include_tag "http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js" %>
-
-=======
-  
- 
-  <%= stylesheet_link_tag "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-<%= javascript_include_tag "http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.4.min.js" %>
-<%= javascript_include_tag "http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js" %>
-
-
->>>>>>> ac552fa482dc1261f5c2d40ca170ac3a5bdb2e02
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -27,7 +16,7 @@
 		<%= image_tag("logo.gif",:alt=>"Logo",:class=>"logo")%>
 		
 		<div class="menu">
-<<<<<<< HEAD
+
 					<ul>
 			  <li<%=list_class("start")%>><%= link_to t(:main), "/" %></li>				
 				 <li<%=list_class("new")%>><%= link_to t(:feedback), new_feedback_path %></li>
@@ -37,8 +26,7 @@
 			
 			
 =======
-			<%= render 'menu' %>
->>>>>>> ac552fa482dc1261f5c2d40ca170ac3a5bdb2e02
+
 		</div>
 	</div>
 	<section>
