@@ -1,16 +1,12 @@
 Site::Application.routes.draw do
 
-
+scope "(:locale)", :locale => /en|ru/ do
 
   devise_for :users
 
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
 
   resources :users
-
-
-scope "(:locale)", :locale => /en|ru/ do
-
   resources :feedbacks
 
   get "/about"=>'feedbacks#about'
