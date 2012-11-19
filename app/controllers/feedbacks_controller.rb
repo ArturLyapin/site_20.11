@@ -57,6 +57,7 @@ def handle_unverified_request
         format.html { redirect_to @feedback, :notice => t(:create_message) }
 		    format.js 
         format.json { render :json => @feedback, :status => :created, :location => @feedback }
+
       else
         format.html { render :action => "new" }
         format.json { render :json => @feedback.errors, :status => :unprocessable_entity }
