@@ -1,9 +1,13 @@
 Site::Application.routes.draw do
 
 
+<<<<<<< HEAD
   devise_for :users
 
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
+=======
+  resources :users
+>>>>>>> ac552fa482dc1261f5c2d40ca170ac3a5bdb2e02
 
 scope "(:locale)", :locale => /en|ru/ do
 

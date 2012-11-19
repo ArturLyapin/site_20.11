@@ -18,9 +18,14 @@ end
 
 
 gem 'json'
+<<<<<<< HEAD
 gem 'paperclip', "~> 2.7"
 gem 'aws-sdk'
 gem 'remotipart'
+=======
+gem 'paperclip'
+gem 'aws-sdk'
+>>>>>>> ac552fa482dc1261f5c2d40ca170ac3a5bdb2e02
 
 
 # Gems used only for assets and not required
