@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Site</title>
+
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+	<%= javascript_include_tag "http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.4.min.js" %>
+<%= javascript_include_tag "http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js" %>
+
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div id="main_container">
+	<div id="header">
+		<%= image_tag("logo.gif",:alt=>"Logo",:class=>"logo")%>
+		
+		<div class="menu">
+					<ul>
+			  <li<%=list_class("start")%>><%= link_to t(:main), "/" %></li>				
+				 <li<%=list_class("new")%>><%= link_to t(:feedback), new_feedback_path %></li>
+				 <li<%=list_class("about")%>><%= link_to t(:about),"/about"%></li>
+				 <li<%=list_class("jobs")%>><%= link_to t(:jobs), "/jobs" %></li>		
+			</ul>	
+			
+			
+		</div>
+	</div>
+	<section>
+	
+		<%= yield %>
+		
+	</section>
+
+	 	<div id="footer">                                              
+    	</div>
+	</div>
+</body>
+</html>

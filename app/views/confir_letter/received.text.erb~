@@ -1,0 +1,3 @@
+name:  <%= @greeting.name %>
+address:  <%= @greeting.address %>
+phone:  <%= @greeting.phone_number %>
