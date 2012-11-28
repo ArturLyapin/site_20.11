@@ -1,5 +1,8 @@
 class FeedbacksController < ApplicationController
- 
+
+caches_action :about,:jobs
+
+
 def handle_unverified_request
     logger.info 'FAIL!!!!!!!!!!!!!!!!'
   end
@@ -91,6 +94,13 @@ def handle_unverified_request
       format.html { redirect_to feedbacks_url }
       format.json { head :no_content }
     end
+  end
+
+def about
+    expire_action :action => :about
+  end
+def jobs
+	expire_action :action => :jobs
   end
 
 end

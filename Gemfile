@@ -21,6 +21,7 @@ end
 gem 'json'
 gem 'paperclip', "~> 2.7"
 gem 'aws-sdk'
+gem 'dalli', '~>1.0.5'
 
 
 

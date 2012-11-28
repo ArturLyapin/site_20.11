@@ -6,6 +6,7 @@ Site::Application.initialize!
 
 Site::Application.configure do
 config.action_mailer.delivery_method = :smtp
+config.action_controller.perform_caching = true
 end
 
 ActionMailer::Base.smtp_settings = {
