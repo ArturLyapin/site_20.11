@@ -1,6 +1,5 @@
 class FeedbacksController < ApplicationController
 
-caches_action :about,:jobs
 
 
 def handle_unverified_request
@@ -96,9 +95,6 @@ def handle_unverified_request
     end
   end
 
-def about
-  end
-def jobs
-  end
+
 
 end
