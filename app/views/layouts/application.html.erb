@@ -7,6 +7,9 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
 	<%= javascript_include_tag "http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.4.min.js" %>
+
+<%= javascript_include_tag "http://site.name/share42/share42.js" %>
+
 <%= javascript_include_tag "http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js" %>
   <%= csrf_meta_tags %>
 </head>
@@ -29,6 +32,8 @@
 	</div>
 	<section>
 	<div class="center_content">
+ 		<div class="share42init" data-top1="170" data-top2="50" data-margin="-20"></div>
+
 		<%= yield %>
 		</div>
 	</section>
