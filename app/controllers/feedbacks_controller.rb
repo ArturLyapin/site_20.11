@@ -96,11 +96,6 @@ def handle_unverified_request
     end
   end
 
-def about
-    expire_action :action => :about
-  end
-def jobs
-	expire_action :action => :jobs
-  end
+
 
 end

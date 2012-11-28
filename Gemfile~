@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+
 gem 'rails', '3.2.8'
 
 # Bundle edge Rails instead:
@@ -18,14 +19,17 @@ end
 
 
 gem 'json'
-<<<<<<< HEAD
 gem 'paperclip', "~> 2.7"
 gem 'aws-sdk'
+gem 'dalli', '~>1.0.5'
+
+
+
+gem 'fastercsv'
+gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
+
+
 gem 'remotipart'
-=======
-gem 'paperclip'
-gem 'aws-sdk'
->>>>>>> ac552fa482dc1261f5c2d40ca170ac3a5bdb2e02
 
 
 # Gems used only for assets and not required
@@ -56,3 +60,8 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'ruby-debug'
+
+
+
+gem "devise"
+

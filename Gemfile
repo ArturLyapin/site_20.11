@@ -25,6 +25,7 @@ gem 'dalli', '~>1.0.5'
 
 
 
+
 gem 'fastercsv'
 gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 
