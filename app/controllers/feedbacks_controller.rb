@@ -96,6 +96,9 @@ def handle_unverified_request
     end
   end
 
-
+def about
+  end
+def jobs
+  end
 
 end
