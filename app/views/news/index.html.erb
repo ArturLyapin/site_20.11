@@ -1,0 +1,17 @@
+	<div class="title">
+		<span class="blue"><%=t :all_news%></span>
+	</div>
+	
+	<div class="about">
+<% @news.each do |news| %>
+  <tr>
+  	<td><%= link_to news.title,news,:class=>'news'%></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+<br />
+
+<%= link_to t(:back), "/"%>
+</div>

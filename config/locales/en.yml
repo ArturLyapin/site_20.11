@@ -18,4 +18,8 @@ en:
   add_file: "Add file"
   send_letter: "Send letter"
   create_message: "Letter sent successfully"
+  news: "News"
+  all_news: "All news"
+  back: "Back"
+  last_news: "Last news"
 

@@ -196,6 +196,8 @@ width:auto;
 border-bottom:1px #CCCCCC dashed;
 padding:10px 0 8px 0;
 }
+
+
 .news_icon{
 width:30px;
 height:33px;
@@ -209,6 +211,7 @@ text-align:justify;
 line-height:20px;
 padding:0 0 0 10px;
 }
+
 /*-----------------------login_form-------------------*/
 .text_box{
 width:278px;

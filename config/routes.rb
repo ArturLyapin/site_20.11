@@ -1,5 +1,7 @@
 Site::Application.routes.draw do
 
+  resources :news
+
 scope "(:locale)", :locale => /en|ru/ do
 
   devise_for :users
@@ -10,7 +12,7 @@ scope "(:locale)", :locale => /en|ru/ do
   resources :feedbacks
 
   get "/about"=>'feedbacks#about'
-  get "/start"=>'feedbacks#start'
+  get "/start"=>'news#start'
   get "/contacts"=>'feedbacks#contacts'
   get "/jobs"=>'feedbacks#jobs'
 	end
@@ -65,8 +67,8 @@ scope "(:locale)", :locale => /en|ru/ do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-	match '/:locale' => 'feedbacks#start'
-   root :to => 'feedbacks#start'
+	match '/:locale' => 'news#start'
+   root :to => 'news#start'
 
   # See how all your routes lay out with "rake routes"
 
