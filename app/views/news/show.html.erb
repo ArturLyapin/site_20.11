@@ -1,21 +1,19 @@
-<p id="notice"><%= notice %></p>
-
-
+ <div class="center-content">
+  	  <div class="news_icon"></div>
   	<div class="title">
-		<span class="blue">  <%= @news.title %></span>
+				<span class="blue"><%= @news.title %></span>
 	</div>
-
-<p>
-	<div class="news">
-		<pre style="padding:10px 35px 0 20px;
-background-color:#e9e5e2;">
-  <%= @news.content %>
-  		</pre>
-
-<br><hr>
+		
+ <div class="news_box">
+        <div class="news_content">
+			<pre style="background-color:#e9e5e2;" width="105">
+<%= @news.content %>
+		  		</pre>	
+	</div>
+</div>
 	<div id="vk_like"></div>
 	<script type="text/javascript">
-	VK.Widgets.Like("vk_like", {type: "vertical", height: 20});
+	VK.Widgets.Like("vk_like", {type: "mini", height: 20});
 	</script>
 		<div class="g-plusone"></div>
 	<a href="https://twitter.com/share" class="twitter-share-button" data-via="ExampleApp" data-lang="ru">Твитнуть</a>
@@ -25,3 +23,5 @@ background-color:#e9e5e2;">
 
 <%= link_to t(:back), "/"%>
 </div>
+
+
