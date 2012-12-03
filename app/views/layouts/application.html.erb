@@ -7,7 +7,7 @@
 	<%= javascript_include_tag "application" %>
 	<%= javascript_include_tag "http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.4.min.js" %>
 	<%= javascript_include_tag "http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js" %>
-	<%= javascript_include_tag  "/assets/share42.js" %>
+	
 	<script type="text/javascript" src="//vk.com/js/api/openapi.js?69"></script>
 	
 	<script type="text/javascript">
@@ -37,14 +37,12 @@
 	</div>
 	<section>
 	<div class="center_content">
- 		<div class="share42init" data-top1="170" data-top2="50" data-margin="-50"></div>
-
 		<%= yield %>
 		</div>
 	</section>
 
 	 	<div id="footer">  
-	 		<script type="text/javascript">
+	 		<script async type="text/javascript">
   window.___gcfg = {lang: 'ru'};
 
   (function() {
@@ -56,7 +54,7 @@
 
 
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
+<script async>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;

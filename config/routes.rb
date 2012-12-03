@@ -2,7 +2,7 @@ Site::Application.routes.draw do
 
   resources :news
 
-scope "(:locale)", :locale => /en|ru/ do
+#scope "(:locale)", :locale => /en|ru/ do
 
   devise_for :users
 
@@ -15,7 +15,7 @@ scope "(:locale)", :locale => /en|ru/ do
   get "/start"=>'news#start'
   get "/contacts"=>'feedbacks#contacts'
   get "/jobs"=>'feedbacks#jobs'
-	end
+	#end
 #  get "/contacts"=>'feedbacks#contacts'
 
   # The priority is based upon order of creation:

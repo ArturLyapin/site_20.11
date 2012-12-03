@@ -1,23 +1,24 @@
  <div class="center-content">
   	  <div class="news_icon"></div>
-  	<div class="title">
+  	  <div class="title">
 				<span class="blue"><%= @news.title %></span>
-	</div>
-		
+		</div>		
  <div class="news_box">
         <div class="news_content">
 			<pre style="background-color:#e9e5e2;" width="105">
 <%= @news.content %>
-		  		</pre>	
-	</div>
+		  	</pre>	
+		</div>
 </div>
+<br />
+
 	<div id="vk_like"></div>
-	<script type="text/javascript">
+	<script async type="text/javascript">
 	VK.Widgets.Like("vk_like", {type: "mini", height: 20});
 	</script>
-		<div class="g-plusone"></div>
+	<div class="g-plusone"></div>
 	<a href="https://twitter.com/share" class="twitter-share-button" data-via="ExampleApp" data-lang="ru">Твитнуть</a>
-	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	<script async>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 	<div class="fb-like" data-send="false" data-width="450" data-show-faces="true"></div>
 <br>
 
