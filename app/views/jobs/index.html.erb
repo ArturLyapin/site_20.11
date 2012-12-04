@@ -11,11 +11,16 @@
   <%= job.discription %>
 </p>
 <br />
-	<div id="vk_like"></div>
-	<script async type="text/javascript">
-	VK.Widgets.Like("vk_like", {type: "vertical", height: 20,page_id:<%=job.id%>});</script>
-	<br/>
+
+
 	<div class="g-plusone"></div>
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="ExampleApp" data-lang="ru">Твитнуть</a>
+	<script async>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	<script async type="text/javascript">
+	VK.Widgets.Like("vk_like<%= job.id %>", {type: "mini", height: 20});</script>
+	<div id="vk_like<%= job.id %>"></div>
+	<div class="fb-like" data-send="false" data-width="300" data-show-faces="false"></div>
+
 	
 <% end %>
 
