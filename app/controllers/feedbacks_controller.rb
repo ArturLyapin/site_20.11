@@ -32,7 +32,7 @@ def handle_unverified_request
   # GET /feedbacks/new.json
   def new
     @feedback = Feedback.new
-
+    @job=Job.find_by_id(params[:id])
     respond_to do |format|
       format.html # new.html.erb
       format.json { render :json => @feedback }

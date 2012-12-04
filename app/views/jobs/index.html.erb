@@ -5,7 +5,7 @@
   <span class="blue"><%= job.name %></span>
 </div>
 
-  		<%= link_to t(:respond), new_feedback_path(:text=>job.name+"\n"),:class=>"respond"%>
+  		<%= link_to t(:respond), new_feedback_path(:id=>job.id),:class=>"respond"%>
 
 <p>
   <%= job.discription %>
@@ -19,7 +19,7 @@
 	<div class="fb-like" data-send="false" data-width="300" data-show-faces="false"></div>
 	<script async type="text/javascript">
 	VK.Widgets.Like("vk_like<%= job.id %>", {type: "mini", height: 20});</script>
-	<div id="vk_like<%= job.id %>"></div>
+	<div id="vk_like<%= job.id %>"></div><br/>
 
 	
 <% end %>
