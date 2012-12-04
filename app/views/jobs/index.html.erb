@@ -11,10 +11,11 @@
   <%= job.discription %>
 </p>
 <br />
-
-	<script async type="text/javascript">
-	VK.Widgets.Like("vk_like", {type: "mini", height: 20,page_id:<%=job.id%>});</script>
 	<div id="vk_like"></div>
+	<script async type="text/javascript">
+	VK.Widgets.Like("vk_like", {type: "vertical", height: 20,page_id:<%=job.id%>});</script>
+	<br/>
+	<div class="g-plusone"></div>
 	
 <% end %>
 
