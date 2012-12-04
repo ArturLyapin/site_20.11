@@ -1,7 +1,9 @@
 Site::Application.routes.draw do
 
-  resources :news
+  resources :jobs
 
+  resources :news
+  
 #scope "(:locale)", :locale => /en|ru/ do
 
   devise_for :users
@@ -13,8 +15,8 @@ Site::Application.routes.draw do
 
   get "/about"=>'feedbacks#about'
   get "/start"=>'news#start'
-  get "/contacts"=>'feedbacks#contacts'
-  get "/jobs"=>'feedbacks#jobs'
+  #get "/contacts"=>'feedbacks#contacts'
+  get "/jobs"=>'jobs#index'
 	#end
 #  get "/contacts"=>'feedbacks#contacts'
 

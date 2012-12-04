@@ -19,7 +19,6 @@ margin:0px auto auto auto;
 color:#36322b;
 }
 
-
 p{
 padding:0px;
 text-align:justify;
@@ -53,6 +52,7 @@ text-decoration:none;
 font-size:11px;
 background:url(read_more_bg.gif) no-repeat center;
 }
+
 a:hover.read_more{
 text-decoration:underline;
 background-color:#e9e5e2;
@@ -61,7 +61,6 @@ img.left_img{
 float:left;
 padding:3px 25px 3px 3px;
 }
-
 
 #main_container{
 width:821px;
@@ -86,6 +85,7 @@ font-size:22px;
 color:#2e2721;
 font-weight:bold;
 }
+
 .title_welcome{
 width: auto;
 padding:0 0 6px 35px;
