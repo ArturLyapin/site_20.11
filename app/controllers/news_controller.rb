@@ -1,7 +1,6 @@
 class NewsController < ApplicationController
   
   def start
-
     @last_news=News.last
     mas=@last_news.content.split("\n")
     @first=mas[0]

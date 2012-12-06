@@ -29,6 +29,11 @@ class NewsControllerTest < ActionController::TestCase
     assert_response :success
   end
 
+  test "should show start news" do
+    get :start
+    assert_response :success
+  end
+
   test "should get edit" do
     get :edit, :id => @news
     assert_response :success

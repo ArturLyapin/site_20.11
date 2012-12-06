@@ -1,6 +1,7 @@
 require 'test_helper'
 
 class ConfirLetterTest < ActionMailer::TestCase
+  
   test "admin received" do
     mail = ConfirLetter.admin_received(feedbacks(:one))
     assert_equal "Admin letter", mail.subject

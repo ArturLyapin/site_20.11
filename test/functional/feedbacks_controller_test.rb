@@ -12,7 +12,8 @@ class FeedbacksControllerTest < ActionController::TestCase
   end
 
   test "should get new" do
-    get :new
+    @job=jobs(:one)
+    get :new,:id=>@job
     assert_response :success
   end
 
