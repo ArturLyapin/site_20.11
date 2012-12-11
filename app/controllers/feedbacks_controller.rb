@@ -23,7 +23,7 @@ class FeedbacksController < ApplicationController
       
       if @feedback.save
 
-        ConfirLetter.admin_received(@feedback).deliver
+        ConfirmationEmail.admin_received(@feedback).deliver
 
        # format.html { redirect_to @feedback, :notice => t(:create_message) }
         format.js 
