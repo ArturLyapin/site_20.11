@@ -1,9 +1,8 @@
 development:
-  MAIL_ADDRESS: lyapinartur@gmail.com
+  ADMIN_MAIL_ADDRESSES: lyapinartur@gmail.com
 test:
-  MAIL_ADDRESS: lyapinartur@gmail.com
-
+  ADMIN_MAIL_ADDRESSES: lyapinartur@gmail.com
 production:
-  MAIL_ADDRESS: lyapinartur@gmail.com
+  ADMIN_MAIL_ADDRESSES: lyapinartur@gmail.com
 
  

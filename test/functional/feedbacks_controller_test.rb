@@ -5,12 +5,6 @@ class FeedbacksControllerTest < ActionController::TestCase
     @feedback = feedbacks(:one)
   end
 
-  test "should get index" do
-    get :index
-    assert_response :success
-    assert_not_nil assigns(:feedbacks)
-  end
-
   test "should get new" do
     @job=jobs(:one)
     get :new,:id=>@job
@@ -21,30 +15,6 @@ class FeedbacksControllerTest < ActionController::TestCase
     assert_difference('Feedback.count') do
       post :create, :feedback => {:email => @feedback.email, :name => @feedback.name, :phone_number => @feedback.phone_number, :text=>@feedback.text }
     end
-
     assert_redirected_to feedback_path(assigns(:feedback))
-  end
-
-  test "should show feedback" do
-    get :show, :id => @feedback
-    assert_response :success
-  end
-
-  test "should get edit" do
-    get :edit, :id => @feedback
-    assert_response :success
-  end
-
-  test "should update feedback" do
-    put :update, :id => @feedback, :feedback => { :text => @feedback.text, :email => @feedback.email, :name => @feedback.name, :phone_number => @feedback.phone_number }
-    assert_redirected_to feedback_path(assigns(:feedback))
-  end
-
-  test "should destroy feedback" do
-    assert_difference('Feedback.count', -1) do
-      delete :destroy, :id => @feedback
-    end
-
-    assert_redirected_to feedbacks_path
   end
 end

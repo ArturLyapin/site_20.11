@@ -1,8 +1,0 @@
-class DropNewsTable < ActiveRecord::Migration
-  def up
-	drop_table :news
-  end
-
-  def down
-  end
-end

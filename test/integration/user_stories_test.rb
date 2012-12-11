@@ -4,9 +4,7 @@ class UserStoriesTest < ActionDispatch::IntegrationTest
 
   test "watch site and create feedback" do
     
-    visit('/projects')
-    @news=News.last
-    click_link(@news.title)
+    visit('/')
     click_link('Вакансии')
     @job=jobs(:one)
     visit(new_feedback_path)

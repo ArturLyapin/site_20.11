@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 gem 'rails', '3.2.8'
-gem 'rake', '~> 10.0.1'
+#gem 'rake', '~> 10.0.1'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -10,6 +10,7 @@ gem 'rake', '~> 10.0.1'
 
 group :development, :test do
   gem 'sqlite3'
+  gem "rspec-rails"
 end
 
 group :production do
@@ -20,6 +21,7 @@ end
 group :test do
   gem "capybara"
   gem 'database_cleaner'
+  gem "rspec-rails"
 end
 
 
