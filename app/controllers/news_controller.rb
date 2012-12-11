@@ -1,11 +1,5 @@
 class NewsController < ApplicationController
   
-  def start
-    @last_news=News.last
-    mas=@last_news.content.split("\n")
-    @first=mas[0]
-  end
-  
   # GET /news
   # GET /news.json
   def index
