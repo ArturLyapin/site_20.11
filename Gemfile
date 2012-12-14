@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 
 
-gem 'rails', '3.2.8'
+#gem 'rails', '3.2.8'
+gem 'delayed_job_active_record'
 #gem 'rake', '~> 10.0.1'
 
 # Bundle edge Rails instead:
@@ -38,6 +39,7 @@ gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 
 
 gem 'remotipart'
+gem "daemons"
 
 
 # Gems used only for assets and not required

@@ -23,7 +23,7 @@ class FeedbacksController < ApplicationController
       
       if @feedback.save
 
-        ConfirmationEmail.admin_received(@feedback).deliver
+        ConfirmationEmail.delay.admin_received(@feedback)
 
        # format.html { redirect_to @feedback, :notice => t(:create_message) }
         format.js 
