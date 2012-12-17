@@ -18,8 +18,10 @@ class FeedbacksController < ApplicationController
   # POST /feedbacks.json
   def create
     @feedback = Feedback.new(params[:feedback])
-    @feedback.file_path=params[:feedback][:file_path].path
-    @feedback.file_name=params[:feedback][:file_path].original_filename
+    if params[:feedback][:file_path]
+      @feedback.file_path=params[:feedback][:file_path].path
+      @feedback.file_name=params[:feedback][:file_path].original_filename
+    end
     
     respond_to do |format|
       
