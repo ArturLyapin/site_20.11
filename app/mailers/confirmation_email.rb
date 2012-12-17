@@ -8,7 +8,6 @@ class ConfirmationEmail < ActionMailer::Base
     attachments[@feedback.file_name] =File.read(@feedback.file_path) #{|f| f.read}
     end
 
-
   mail(:to => APP_CONFIG["ADMIN_MAIL_ADDRESSES"],
          :subject => "Admin letter")
   end

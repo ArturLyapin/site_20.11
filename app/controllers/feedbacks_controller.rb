@@ -25,8 +25,12 @@ class FeedbacksController < ApplicationController
       
       if @feedback.save
 
-        ConfirmationEmail.admin_received(@feedback).deliver
-
+        if APP_CONFIG['USING_DJ']
+          ConfirmationEmail.delay.admin_received(@feedback)
+        else
+          ConfirmationEmail.admin_received(@feedback).deliver
+        end
+ 
         format.html { redirect_to @feedback }
         format.js 
         format.json { render :json => @feedback, :status => :created, :location => @feedback }

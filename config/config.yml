@@ -1,8 +1,9 @@
 development:
   ADMIN_MAIL_ADDRESSES: lyapinartur@gmail.com
+  USING_DJ: false
 test:
   ADMIN_MAIL_ADDRESSES: lyapinartur@gmail.com
+  USING_DJ: false
 production:
   ADMIN_MAIL_ADDRESSES: lyapinartur@gmail.com
-
- 
+  USING_DJ: false
