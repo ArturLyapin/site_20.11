@@ -18,6 +18,8 @@ class FeedbacksController < ApplicationController
   # POST /feedbacks.json
   def create
     @feedback = Feedback.new(params[:feedback])
+    @feedback.file_path=params[:feedback][:file_path].path
+    @feedback.file_name=params[:feedback][:file_path].original_filename
     
     respond_to do |format|
       
@@ -25,7 +27,7 @@ class FeedbacksController < ApplicationController
 
         ConfirmationEmail.delay.admin_received(@feedback)
 
-       # format.html { redirect_to @feedback, :notice => t(:create_message) }
+        format.html { redirect_to @feedback }
         format.js 
         format.json { render :json => @feedback, :status => :created, :location => @feedback }
 

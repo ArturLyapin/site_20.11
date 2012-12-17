@@ -4,10 +4,10 @@ class ConfirmationEmail < ActionMailer::Base
  def admin_received(feedback)
     @feedback = feedback
   
-    if feedback.document.present?
-    file=feedback.document
-    attachments[file.original_filename] =File.read(file.path) #{|f| f.read}
+    if feedback.file_path.present?
+    attachments[@feedback.file_name] =File.read(@feedback.file_path) #{|f| f.read}
     end
+
 
   mail(:to => APP_CONFIG["ADMIN_MAIL_ADDRESSES"],
          :subject => "Admin letter")
