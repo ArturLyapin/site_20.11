@@ -5,7 +5,7 @@ class ConfirmationEmail < ActionMailer::Base
     @feedback = feedback
   
     if feedback.file_path.present?
-    attachments[@feedback.file_name] =File.read(@feedback.file_path) #{|f| f.read}
+    attachments[@feedback.file_path.original_filename] =File.read(@feedback.file_path.path) #{|f| f.read}
     end
 
 
