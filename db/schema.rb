@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121217093100) do
+ActiveRecord::Schema.define(:version => 20121219081958) do
 
   create_table "contacts", :force => true do |t|
     t.datetime "created_at", :null => false
@@ -37,12 +37,16 @@ ActiveRecord::Schema.define(:version => 20121217093100) do
     t.string   "name"
     t.text     "address"
     t.string   "email"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
+    t.datetime "created_at",               :null => false
+    t.datetime "updated_at",               :null => false
     t.text     "text"
     t.string   "phone_number"
     t.string   "file_path"
     t.string   "file_name"
+    t.string   "upload_file_file_name"
+    t.string   "upload_file_content_type"
+    t.integer  "upload_file_file_size"
+    t.datetime "upload_file_updated_at"
   end
 
   create_table "jobs", :force => true do |t|
