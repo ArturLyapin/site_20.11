@@ -12,9 +12,5 @@ describe NewsController do
   end
   describe "GET show" do
   
-    it "should be successful" do
-      get :show,:id=>News.first     
-      response.should be_success
-    end    
   end
 end
