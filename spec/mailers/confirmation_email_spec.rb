@@ -28,22 +28,22 @@ describe ConfirmationEmail do
     it 'assigns @name' do
       mail.body.encoded.should match(feedback.name)
     end
-    
-    if APP_CONFIG['USING_DJ']
+
      it "should create a new letter in DJ database" do
+       APP_CONFIG['USING_DJ']=true
         lambda do
           post :create, :feedback
         end.should change(Delayed::Job,:count).by(1)
       end
-      
-    else
-           it "should send a new letter" do
+       
+      it "should send a new letter" do
+        APP_CONFIG['USING_DJ']=false
         lambda do
           post :create, :feedback
         end
-        ActionMailer::Base.deliveries.empty?
+        ActionMailer::Base.deliveries.should be_empty
       end
-    end  
+
     
  
   end
