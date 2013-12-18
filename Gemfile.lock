@@ -223,6 +223,7 @@ DEPENDENCIES
   paperclip (~> 2.7)
   pg
   rails_admin!
+  rake (~> 10.0.3)
   remotipart
   rspec-mocks
   rspec-rails

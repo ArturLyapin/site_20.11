@@ -3,14 +3,14 @@ source 'https://rubygems.org'
 
 #gem 'rails', '3.2.8'
 gem 'delayed_job_active_record'
-#gem 'rake', '~> 10.0.1'
+gem 'rake', '~> 10.0.3'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 
 group :development, :test do
-  gem 'sqlite3'
+  gem "sqlite3", :platform => [:ruby, :mswin, :mingw]
   gem "rspec-rails"
 end
 
