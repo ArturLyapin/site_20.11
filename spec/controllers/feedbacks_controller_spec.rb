@@ -32,9 +32,9 @@ describe FeedbacksController,:type => :controller do
     assigns(:feedback).should == @feedback
   end
       
-     it "should create and send message" do
-      lambda do
-        post :create,:feedback=>@feedback
-      end.should_not change(Feedback, :count).by(1)
-    end     
+#     it "should create and send message" do
+#      lambda do
+#        post :create,:feedback=>@feedback
+#      end.should_not change(Feedback, :count).by(1)
+#    end     
 end
