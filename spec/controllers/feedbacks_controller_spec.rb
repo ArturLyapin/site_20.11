@@ -1,6 +1,7 @@
 require 'spec_helper'
 
 
+
 describe FeedbacksController,:type => :controller do    
               
       before(:each) do
@@ -31,7 +32,7 @@ describe FeedbacksController,:type => :controller do
     do_create
     assigns(:feedback).should == @feedback
   end
-      
+  
 #     it "should create and send message" do
 #      lambda do
 #        post :create,:feedback=>@feedback
