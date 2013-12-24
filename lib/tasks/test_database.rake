@@ -3,6 +3,7 @@ namespace :test_database do
   
   task :establish_connection do
     database_conf = Rails.configuration.database_configuration["test"]
+    p Rails.configuration.database_configuration
     ActiveRecord::Base.establish_connection(:adapter => database_conf["adapter"], :database  => database_conf["database"])
   end
   
