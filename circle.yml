@@ -1,5 +1,6 @@
-test:
-  pre:
+database:
+  post:
     - bundle exec rake test_database:create_armailer_tables
+test:
   override:
     - rspec
